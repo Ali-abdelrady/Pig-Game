@@ -1,0 +1,113 @@
+/* Variales */
+:root {
+  --fst-main-color: #222;
+  --sec-main-color: #60b347;
+  --fore-color: #eee;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 65%;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+}
+.player {
+  width: 50%;
+  height: 100%;
+  padding: 9rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.75s;
+}
+.name {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.score {
+  color: #c7365f;
+  font-size: 7rem;
+  margin-bottom: auto;
+}
+.current {
+  padding: 2rem;
+  width: 65%;
+  background-color: #c7365f;
+  color: #eee;
+  border-radius: 7px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.current-score {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+.dice {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10rem;
+}
+.btn {
+  position: absolute;
+  background-color: white;
+  color: gray;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.8rem;
+  border: none;
+  transition: all 0.75s;
+  cursor: pointer;
+}
+
+.new-btn {
+  top: 50px;
+}
+.roll-btn {
+  bottom: 150px;
+}
+.hold-btn {
+  bottom: 100px;
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.hide {
+  display: none;
+}
+.winner {
+  color: #c7365f;
+  background-color: #2f2f2f;
+}
